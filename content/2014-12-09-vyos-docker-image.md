@@ -7,8 +7,6 @@ Summary: VyOS の Docker イメージの作り方です。
 
 この記事は、 [VyOS Advent Calendar 2014][1] の9日目の記事です。
 
-## 目次
-
 [TOC]
 
 VyOS のコンテナがあったら面白そうということで作ってみました。
