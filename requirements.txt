@@ -1,0 +1,9 @@
+fabric
+pelican
+markdown
+mdx_linkify
+mdx_del_ins
+markupsafe
+pelican-gist
+IPython
+ghp-import
