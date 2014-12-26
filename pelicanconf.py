@@ -40,6 +40,7 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 BOOTSTRAP_THEME = 'cosmo'
 GITHUB_USER = 'higebu'
+CODERWALL_USER = 'higebu'
 ADDTHIS_PROFILE = 'ra-53123bf42910d399'
 
 PATH = 'content'

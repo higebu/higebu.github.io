@@ -1,0 +1,20 @@
+{% if CODERWALL_USER %}
+	<li class="list-group-item">
+		<h4><i class="fa fa-coderwall fa-lg"></i><span class="icon-label">Coderwall Badges</span></h4>
+		<div id="coderwall_badges"></div>
+		<a href="http://coderwall.com/{{ CODERWALL_USER }}">@{{ CODERWALL_USER }}</a> on coderwall
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$.getJSON("http://coderwall.com/{{ CODERWALL_USER }}.json?callback=?", function(data){
+				for(var i = 0; i < data.data.badges.length ; i++){
+					var badge = data.data.badges[i];
+					var badge_tag = $("<img />");
+					badge_tag.attr("src",badge.badge);
+					badge_tag.css("width","50%");
+					$("#coderwall_badges").append(badge_tag);
+				}
+			});
+		});
+		</script>
+	</li>
+{% endif %}
