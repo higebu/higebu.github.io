@@ -6,7 +6,7 @@ Author: higebu
 Category: Tech
 Tags: vim, solarized, hybridtext, neobundle, plugin
 
-{% img /images/2012/09/vim-editor_logo.png 144 144 "Vim" "Vim" %}
+{% img /images/vim-editor_logo.png 144 144 "Vim" "Vim" %}
 
 最近、Vimのカラーテーマを[Solarized](http://ethanschoonover.com/solarized)にしたんですが、そしたらxxx.txtに書いてたメモがすごく読みづらくなった。
 

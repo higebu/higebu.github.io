@@ -5,7 +5,7 @@ save_as: archives/263/index.html
 Author: higebu
 Category: Tech
 
-{% img /images/2011/04/20110425-012047.jpg 488 653 Antenna Antenna %}
+{% img /images/20110425-012047.jpg 488 653 Antenna Antenna %}
 
 うちの地域は電波が弱い地域で、ケーブルテレビさんがタダでテレビのケーブルを提供してくれていたが、
 

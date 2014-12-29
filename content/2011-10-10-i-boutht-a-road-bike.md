@@ -6,7 +6,7 @@ Author: higebu
 Category: Road bike
 Tags: road bike
 
-{% img /images/2011/10/20111010-123442.jpg 560 418 "GIOS Al Lite" "GIOS Al Lite" %}
+{% img /images/20111010-123442.jpg 560 418 "GIOS Al Lite" "GIOS Al Lite" %}
 
 8月28日に買いました。
 
@@ -40,11 +40,11 @@ Tags: road bike
 
 ↓取り付けるとこんな感じ
 
-{% img /images/2011/10/20111010-123511.jpg 560 418 "iCrew 4 for iPhone" "iCrew 4 for iPhone" %}
+{% img /images/20111010-123511.jpg 560 418 "iCrew 4 for iPhone" "iCrew 4 for iPhone" %}
 
 ↓iPhone入れるやつ外すとこんな感じ
 
-{% img /images/2011/10/20111010-123520.jpg 560 418 "No iCrew 4 for iPhone" "No iCrew 4 for iPhone" %}
+{% img /images/20111010-123520.jpg 560 418 "No iCrew 4 for iPhone" "No iCrew 4 for iPhone" %}
 
 回して画面の角度を調節できるんです。本体回しても画面が回らないのであまり使わなそうですがｗ
 

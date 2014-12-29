@@ -28,4 +28,4 @@ http://www.eclipsecolorthemes.org/
 
 設定画面はこんな感じ↓
 
-{% img /images/2011/05/eclipse-color-theme1.png 640 489 "Eclipse Color Theme" "Eclipse Color Theme" %}
+{% img /images/eclipse-color-theme1.png 640 489 "Eclipse Color Theme" "Eclipse Color Theme" %}

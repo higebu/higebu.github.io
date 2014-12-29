@@ -6,7 +6,7 @@ Author: higebu
 Category: Tech
 Tags: cassandra, hadoop, java
 
-{% img /images/2012/12/Cassandra_logo.png 500 100 Cassandra Cassandra %}
+{% img /images/Cassandra_logo.png 500 100 Cassandra Cassandra %}
 
 Cassandraに入れたデータでMapReduceするサンプル（word count）を動かす。
 
