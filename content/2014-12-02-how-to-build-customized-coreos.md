@@ -7,8 +7,6 @@ Summary: CoreOS のビルド方法とカスタマイズについての記事で�
 
 この記事は、 [CoreOS Advent Calendar 2014][2] の2日目の記事です。
 
-# 目次
-
 [TOC]
 
 [CoreOS][1] は、 Chrome OS をフォークしたもので、 Chrome OS が [Gentoo Linux][3] ベースのため、 CoreOS も Gentoo Linux ベースになっており、 Gentoo のパッケージを持ってくるか、自分で ebuild ファイルを書くことで、パッケージを追加できます。
@@ -266,7 +264,11 @@ CoreOS をビルドしたり、 OEM 対応したりする人は稀だと思い�
 
 実は、ここまでやってもニフティクラウドのイメージは自動アップデートに対応できていません。
 
-理由は、本家の ohama サーバに oem-id が登録されていないせいのようなので、現在プルリクエスト中です。
+~~理由は、本家の ohama サーバに oem-id が登録されていないせいのようなので、現在プルリクエスト中です。~~
+
+2014/12/29 追記: アップデートできなかったのは別の問題だったようで、ビルドし直したところ、問題なくアップデートできました。
+
+ちなみに `update_engine_client -update` で手動アップデートできるので便利です。
 
  [1]: http://qiita.com/advent-calendar/2014/coreos
  [2]: https://coreos.com/
