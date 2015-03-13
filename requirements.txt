@@ -7,3 +7,4 @@ markupsafe
 pelican-gist
 IPython
 ghp-import
+jsonschema
