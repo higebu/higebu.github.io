@@ -69,4 +69,11 @@ WINEARCH=win32 WINEPREFIX=$HOME/.wine32 wine $HOME/.wine32/drive_c/Program\ File
 
 下記の画像のようになります。デスクトップにショートカットもできていて、これをダブルクリックでも起動できます。便利な世の中になりましたね。
 
-{% img /images/20150315-vsphere-client.png 1073 662 "Screen Shot" "Screen Shot" %} 
+{% img /images/20150315-vsphere-client.png 1073 662 "Screen Shot" "Screen Shot" %}
+
+ただ、現状ではコンソールが使えません。コンソールを見たいときは VMware Workstation を使うか、 VNC で接続することになります。
+
+## 参考
+
+* [Wine](https://www.winehq.org/)
+* [How to install vSphere Client 5.5 on Mac OSX using Wine](http://atmosphere147.blogspot.jp/2014/05/how-to-install-vsphere-client-55-on-mac.html)
