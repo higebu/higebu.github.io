@@ -8,3 +8,4 @@ pelican-gist
 IPython
 ghp-import
 jsonschema
+mistune
