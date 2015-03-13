@@ -3,7 +3,7 @@ Slug: vsphere-client-on-ubuntu
 Date: 2015-03-15 12:30
 Category: Tech
 Tags: vmware, vsphere client, vsphere, wine, ubuntu, mono
-Summary: wine で vSphere Client 5.5 を Ubuntu 14.04 上で動かします
+Summary: wine を使って vSphere Client 5.5 を Ubuntu 14.04 上で動かす方法です。
 
 [TOC]
 
