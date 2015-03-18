@@ -5,12 +5,13 @@ from __future__ import unicode_literals
 AUTHOR = u'Yuya Kusakabe'
 SITENAME = u'higeblog'
 SITEURL = ''
-
 PATH = 'content'
-
 TIMEZONE = 'Asia/Tokyo'
-
 DEFAULT_LANG = u'ja'
+DATE_FORMATS = {
+    'en': '%a, %d %b %Y',
+    'jp': '%Y-%m-%d(%a)',
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
