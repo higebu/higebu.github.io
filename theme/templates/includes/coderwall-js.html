@@ -6,6 +6,8 @@
 				var badge = data.data.badges[i];
 				var badge_tag = $("<img />");
 				badge_tag.attr("src",badge.badge);
+				badge_tag.attr("title", badge.description);
+				badge_tag.attr("alt", badge.name);
 				badge_tag.css("width","50%");
 				$("#coderwall_badges").append(badge_tag);
 			}
