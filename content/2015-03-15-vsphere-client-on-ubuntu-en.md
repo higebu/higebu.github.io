@@ -5,6 +5,7 @@ Category: Tech
 Tags: vmware, vsphere client, vsphere, wine, ubuntu, mono
 Summary: Install vSphere Client 5.5 on Ubuntu 14.04 with Wine.
 Lang: en
+save_as: en/blog/2015/03/15/vsphere-client-on-ubuntu/index.html
 
 [TOC]
 
