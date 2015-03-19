@@ -1,5 +1,7 @@
 # higebu.github.io
 
+[![Build Status](https://drone.io/github.com/higebu/higebu.github.io/status.png)](https://drone.io/github.com/higebu/higebu.github.io/latest)
+
 Source code for [www.higebu.com][1] based on [pelican][2].
 
 # How to deploy
