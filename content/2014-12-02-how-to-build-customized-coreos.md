@@ -167,7 +167,6 @@ coreos-overlay/coreos-base/oem-niftycloud/
 │   ├── cloud-config.yml
 │   ├── coreos-setup-environment
 │   ├── niftycloud-coreos-cloudinit
-│   ├── niftycloud-run-startup-scripts
 │   └── niftycloud-ssh-key
 └── oem-niftycloud-0.0.1.ebuild
 ```
@@ -178,8 +177,6 @@ coreos-overlay/coreos-base/oem-niftycloud/
     * /etc/environment 作成用スクリプト
 * niftycloud-coreos-cloudinit
     * ユーザが設定した cloud-config を読み込んで、 coreos-cloudinit に渡すスクリプト
-* niftycloud-run-startup-scripts
-    * ユーザが設定したスクリプトを読み込んで、実行するスクリプト
 * niftycloud-ssh-key
     * sshキーを設定するスクリプト
 * oem-niftycloud-0.0.1.ebuild
