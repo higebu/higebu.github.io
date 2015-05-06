@@ -1,7 +1,7 @@
 {% if CODERWALL_USER %}
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$.getJSON("http://coderwall.com/{{ CODERWALL_USER }}.json?callback=?", function(data){
+		$.getJSON("https://coderwall.com/{{ CODERWALL_USER }}.json?callback=?", function(data){
 			for(var i = 0; i < data.data.badges.length ; i++){
 				var badge = data.data.badges[i];
 				var badge_tag = $("<img />");
