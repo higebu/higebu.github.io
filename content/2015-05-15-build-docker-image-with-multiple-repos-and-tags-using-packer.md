@@ -87,8 +87,7 @@ Can only tag from Docker builder artifacts.
 ```
 
 というエラーになります。
-エラーメッセージには、Docker builder の artifacts しかタグ付けられないよと書いてあるんですが、実際には `docker-import` post proccessor の artifacts も受け取れます。
-しかし、Docker Builder で、`export_path` を指定してエクスポートたものや、`docker-tag` で処理したものは `docker-tag` では受け取れませんということです。
+エラーメッセージには、Docker builder の artifacts しかタグ付けられないよと書いてあるんですが、実際には `docker-import` post proccessor の artifacts も受け取れますし、Docker Builder でも、`export_path` を指定してエクスポートたものは受け取れません。
 
 普通に並べるというのは下記のような感じです。
 
