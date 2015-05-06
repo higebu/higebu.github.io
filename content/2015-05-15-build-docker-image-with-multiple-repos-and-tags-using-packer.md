@@ -1,5 +1,5 @@
 Title: Packer で複数のリポジトリ名や複数のタグが付いた Docker イメージを作る
-Slug: build-docker-image-to-multiple-repos-and-tags-with-packer
+Slug: build-docker-image-with-multiple-repos-and-tags-using-packer
 Date: 2015-05-15 11:00
 Category: Tech
 Tags: packer, docker
