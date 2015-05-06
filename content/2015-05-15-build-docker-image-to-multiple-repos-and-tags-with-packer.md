@@ -92,7 +92,7 @@ Can only tag from Docker builder artifacts.
 
 普通に並べるというのは下記のような感じです。
 
-```
+```json
   "post-processors": [
     [
       {
