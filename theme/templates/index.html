@@ -3,7 +3,7 @@
     {% if articles %}
         {% for article in (articles_page.object_list if articles_page else articles) %}
             <article>
-                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a><a href="https://b.hatena.ne.jp/entry/{{ SITEURL }}/{{ article.url }}"><img src="https://b.hatena.ne.jp/entry/image/large/{{ SITEURL }}/{{ article.url }}"></a></h2>
+                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a><a href="https://b.hatena.ne.jp/entry/{{ SITEURL }}/{{ article.url }}"><img src="https://b.hatena.ne.jp/entry/image/large/{{ SITEURL }}/{{ article.url }}"></a><a href="https://b.hatena.ne.jp/entry/{{ HTTP_SITEURL }}/{{ article.url }}"><img src="https://b.hatena.ne.jp/entry/image/large/{{ HTTP_SITEURL }}/{{ article.url }}"></a></h2>
                 <div class="summary">{{ article.summary }}
                     {% include 'includes/comment_count.html' %}
                     <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
