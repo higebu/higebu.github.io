@@ -5,7 +5,7 @@ mdx_linkify
 mdx_del_ins
 markupsafe
 pelican-gist
-IPython
+IPython==1.2.1
 ghp-import
 jsonschema
 mistune
