@@ -23,9 +23,9 @@ VyOSを触り始めるといろいろと疑問が湧いてくるのですが、�
 
 VyOSのリリースのコードネームは元素名になっています。2015/12/01現在の最新は`Helium`なので、次は`Lithium`です。
 
-`Lithium`についてのページは下記のURLです。
+`Lithium`については下記のURLに書かれています。
 
-http://vyos.net/wiki/Lithium
+[http://vyos.net/wiki/Lithium](http://vyos.net/wiki/Lithium)
 
 Estimated release dateがSpring 2015になってますが、まだ出ていません。このページのRoadmapの`CONFIRMED`や`IN_PROGRESS`でSeverityが高いものが`RESOLVED`になればリリースされるかもしれません。
 
@@ -39,7 +39,7 @@ Estimated release dateがSpring 2015になってますが、まだ出ていま�
 
 下記のURLにJessieに対応しようとしていたブランチがあります。
 
-https://git.multi.eu/vyos/build-iso/tree/jessie-transit
+[https://git.multi.eu/vyos/build-iso/tree/jessie-transit](https://git.multi.eu/vyos/build-iso/tree/jessie-transit)
 
 ### StrongSwanのバージョン新しくならないのか
 
@@ -51,7 +51,7 @@ https://git.multi.eu/vyos/build-iso/tree/jessie-transit
 
 やり方が公式FAQに載っています。
 
-http://vyos.net/wiki/FAQ#How_do_I_install_debian_packages
+[http://vyos.net/wiki/FAQ#How_do_I_install_debian_packages](http://vyos.net/wiki/FAQ#How_do_I_install_debian_packages)
 
 ### 古いバージョンのVyattaのISOやドキュメントが欲しい
 
@@ -59,14 +59,14 @@ VyOSはVyatta 6.5からフォークしたものなので、Vyattaのドキュメ
 
 公式サイトからはなくなっていますが、下記のURLの配下にISOなどがアーカイブされています。
 
-* ftp://ftp.het.net/iso/vyatta/
-* http://docs.huihoo.com/vyatta/
+* [ftp://ftp.het.net/iso/vyatta/](ftp://ftp.het.net/iso/vyatta/)
+* [http://docs.huihoo.com/vyatta/](http://docs.huihoo.com/vyatta/)
 
 ちなみに1つ目の方は[IRC](https://webchat.freenode.net/?channels=#vyos)で`@vyatta archive`と打つと`vybot`が教えてくれます。
 
 失われてしまったVyattaのHacker Forumは下記のページで2013/06/01のスナップショットが見られます。
 
-http://web.archive.org/web/20130601170522/http://vyatta.org/forum
+[http://web.archive.org/web/20130601170522/http://vyatta.org/forum](http://web.archive.org/web/20130601170522/http://vyatta.org/forum)
 
 困っていることは昔と変わらないことが多いので大変参考になります。
 
@@ -74,7 +74,7 @@ http://web.archive.org/web/20130601170522/http://vyatta.org/forum
 
 自分のgistで申し訳ないですが、下記を参考にしてください。
 
-https://gist.github.com/higebu/409c00db4aa1256e405b
+[https://gist.github.com/higebu/409c00db4aa1256e405b](https://gist.github.com/higebu/409c00db4aa1256e405b)
 
 普通にカーネルをリビルドしたい場合は、[公式ドキュメント](http://vyos.net/wiki/Rebuild_VyOS_kernel_Step)が参考になります。
 
@@ -90,7 +90,7 @@ https://gist.github.com/higebu/409c00db4aa1256e405b
 
 一旦開発停止して、下記URLに移動しています。
 
-https://github.com/vyos-legacy/vyconfd
+[https://github.com/vyos-legacy/vyconfd](https://github.com/vyos-legacy/vyconfd)
 
 
  [0]: http://bugzilla.vyos.net/
