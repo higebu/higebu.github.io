@@ -5,8 +5,6 @@ Category: Tech
 Tags: vyos, vyatta
 Summary: VyOSを触り始めて少し経った人向けのFAQです。
 
-[TOC]
-
 最終更新: 2015/12/01
 
 これは、[VyOS Advent Calendar 2015](http://qiita.com/advent-calendar/2015/vyos)の1日目の記事です。
@@ -18,6 +16,8 @@ VyOSを触り始めるといろいろと疑問が湧いてくるのですが、�
 内容は思いついたときに随時更新していくかもしれません。
 
 以下、FAQです。
+
+[TOC]
 
 ### 次のバージョンはいつ出るのか
 
