@@ -1,19 +1,23 @@
-Title: VyOSを初めて触る人向けのFAQ集
+Title: VyOSを触り始めて少し経った人向けのFAQ
 Slug: vyos-faq-for-beginners
 Date: 2015-12-01 00:00
 Category: Tech
 Tags: vyos, vyatta
-Summary: VyOSを初めて触る人向けのFAQ集です。
+Summary: VyOSを触り始めて少し経った人向けのFAQです。
 
 [TOC]
 
 最終更新: 2015/12/01
 
-これは、[VyOS Advent Calendar 2015](http://qiita.com/advent-calendar/2015/vyos)の１日目の記事です。
+これは、[VyOS Advent Calendar 2015](http://qiita.com/advent-calendar/2015/vyos)の1日目の記事です。
 
 VyOSを触り始めるといろいろと疑問が湧いてくるのですが、調べるのが大変なことも多いので、まとめておきます。
 
-初心者向けではない感じになってしまった気もしますが、少し触っていると気になってくることだと思いますので、ご了承ください。
+初めて触る人向けの情報をまとめようと思っていたのですが、少し経ったくらいで気になることばかりになってしまいました。
+
+内容は思いついたときに随時更新していくかもしれません。
+
+以下、FAQです。
 
 ### 次のバージョンはいつ出るのか
 
