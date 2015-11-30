@@ -64,7 +64,8 @@ PLUGINS = [
     'liquid_tags.video',
     'liquid_tags.youtube',
     'liquid_tags.include_code',
-    'liquid_tags.notebook'
+    'liquid_tags.notebook',
+    'tag_cloud'
 ]
 
 MD_EXTENSIONS = (['del_ins', 'fenced_code', 'codehilite(css_class=highlight)', 'tables', 'toc'])
