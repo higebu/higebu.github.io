@@ -39,8 +39,8 @@ DEFAULT_PAGINATION = 10
 STATIC_PATHS = (['images', 'extra/CNAME'])
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/favicon.ico': {'path': 'favicon.ico'},
 }
+FAVICON = 'images/favicon.ico'
 
 BOOTSTRAP_THEME = 'cosmo'
 GITHUB_USER = 'higebu'
