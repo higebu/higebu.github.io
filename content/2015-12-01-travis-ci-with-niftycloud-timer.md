@@ -76,7 +76,7 @@ Travis CIでAPIからのビルドの実行について、詳しくは[公式ド�
 
 ニフティクラウドにログインし、左上のメニューから、タイマーを選択します。
 
-{% img /images/20151201-travis-ci-with-niftycloud-timer-1.png 1261 480 "Select NIFTY Cloud Timer""Select NIFTY Cloud Timer" %} 
+{% img /images/20151201-travis-ci-with-niftycloud-timer-1.png 1261 480 "Select NIFTY Cloud Timer""Select NIFTY Cloud Timer" "Select NIFTY Cloud Timer""Select NIFTY Cloud Timer" %} 
 
 タイマー作成ボタンがあると思いますので、それをクリックします。
 
