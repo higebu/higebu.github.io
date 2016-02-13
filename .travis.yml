@@ -1,9 +1,11 @@
 language: python
+python:
+  - "3.5"
 branches:
   only:
     - source
 install:
-  - pip install -r requirements.txt -M
+  - pip install -r requirements.txt
   - git submodule update --init --recursive
 script:
   - git remote set-url origin https://${GH_TOKEN}@github.com/higebu.github.io.git
