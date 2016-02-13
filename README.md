@@ -1,15 +1,19 @@
 # higebu.github.io
 
-[![Build Status](https://drone.io/github.com/higebu/higebu.github.io/status.png)](https://drone.io/github.com/higebu/higebu.github.io/latest)
+[![Build Status](https://travis-ci.org/higebu/higebu.github.io.svg?branch=master)](https://travis-ci.org/higebu/higebu.github.io)
 
 Source code for [www.higebu.com][1] based on [pelican][2].
 
 # How to deploy
 
+1. Get GitHub Access Token from [Personal access tokens page](https://github.com/settings/tokens).
+2. Set `GH_TOKEN` to env vars.
+3. Run following commands.
+
 ```
-pip install -r requirements.txt -M
+pip install -r requirements.txt
 git submodule update --init --recursive
-make github
+make travis
 ```
 
  [1]: http://www.higebu.com/
