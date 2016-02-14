@@ -1,6 +1,6 @@
 # higebu.github.io
 
-[![Build Status](https://travis-ci.org/higebu/higebu.github.io.svg?branch=master)](https://travis-ci.org/higebu/higebu.github.io)
+[![Build Status](https://travis-ci.org/higebu/higebu.github.io.svg?branch=source)](https://travis-ci.org/higebu/higebu.github.io)
 
 Source code for [www.higebu.com][1] based on [pelican][2].
 
