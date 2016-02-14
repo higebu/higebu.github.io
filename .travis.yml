@@ -4,9 +4,8 @@ python:
 branches:
   only:
     - source
-cache: pip
 install:
-  - pip install -r requirements.txt --cache-dir $HOME/.cache/pip
+  - pip install -r requirements.txt
   - git submodule update --init --recursive
 script:
   - make travis
