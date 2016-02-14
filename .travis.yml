@@ -4,6 +4,8 @@ python:
 branches:
   only:
     - source
+before_install:
+  - pip install -U pip
 install:
   - pip install -r requirements.txt
   - git submodule update --init --recursive
