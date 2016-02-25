@@ -25,3 +25,14 @@ Summary: 開発中の VyOS Berylliumのまとめです。
 * beryllium リリース時に beryllium ブランチが切られる
 * 新機能やバグフィックスは基本的に current にマージしていき、各リリースブランチにはバックポートで対応する
 * 中心的なメンテナはcurrentの開発に集中しているため、現行のHeliumやLithiumのメンテナンスは人を募集している
+
+## 個人的にやりたいこと
+
+* Virtual boxやVMware用の公式イメージの提供
+    * 個人的に作っているVagrant用のbox
+        * [vyos-1.1.7-amd64](https://atlas.hashicorp.com/higebu/boxes/vyos-1.1.7-amd64)
+        * [vyos-1.2.0-beta1-amd64](https://atlas.hashicorp.com/higebu/boxes/vyos-1.2.0-beta1-amd64)
+* Docker対応
+    * Dockerが動くようにしたい
+    * Jessieになるので簡単そう
+    * [前にやってたやつ](https://github.com/higebu/build-iso/tree/helium-docker)
