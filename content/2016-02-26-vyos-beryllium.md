@@ -60,6 +60,7 @@ Summary: 開発中の VyOS Berylliumのまとめです。
     * VyOSに入っているsquidではnetdbは無効のはずなのになぜか内部的にこのURLが叩かれて死んだ
     * バージョンアップすれば直るけど、コンフィグを直す必要があり、VyOSのコマンドで設定できなくなりそう
         * Stableの3.5.15にしたら直ったけどそのままのコンフィグだと起動しなかった
+        * [ビルド方法](https://gist.github.com/higebu/2cb3c4c8fc1e236716ce)
         * 3.5.15だと下記のようなレスポンスが返ってくる
             ```
             curl http://xxx.xxx.xxx.xxx:3128/squid-internal-dynamic/netdb                                                                                       
