@@ -61,13 +61,12 @@ Summary: 開発中の VyOS Berylliumのまとめです。
     * バージョンアップすれば直るけど、コンフィグを直す必要があり、VyOSのコマンドで設定できなくなりそう
         * Stableの3.5.15にしたら直ったけどそのままのコンフィグだと起動しなかった
         * [ビルド方法](https://gist.github.com/higebu/2cb3c4c8fc1e236716ce)
+        * Jessieでは3.4.8なのでたぶん直っているはず(未確認)
         * 3.5.15だと下記のようなレスポンスが返ってくる
 
-            ```
-            curl http://xxx.xxx.xxx.xxx:3128/squid-internal-dynamic/netdb                                                                                       
-            NETDB support not compiled into this Squid cache.
-            ```
-
-    * Jessieでは3.4.8なのでたぶん直っているはず(未確認)
+```
+curl http://xxx.xxx.xxx.xxx:3128/squid-internal-dynamic/netdb                                                                                       
+NETDB support not compiled into this Squid cache.
+```
 
  [vyos-build]: https://github.com/vyos/vyos-buld
