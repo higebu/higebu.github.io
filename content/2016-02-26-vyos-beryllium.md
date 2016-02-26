@@ -69,4 +69,4 @@ curl http://xxx.xxx.xxx.xxx:3128/squid-internal-dynamic/netdb
 NETDB support not compiled into this Squid cache.
 ```
 
- [vyos-build]: https://github.com/vyos/vyos-buld
+ [vyos-build]: https://github.com/vyos/vyos-build
