@@ -52,7 +52,7 @@ Summary: 開発中の VyOS Berylliumのまとめです。
 * Docker対応
     * Dockerが動くようにしたい
     * Jessieになるので簡単そう
-    * [前にやってたやつ](blog/2014/12/10/docker-on-vyos/)
+    * [前にやってたやつ](https://www.higebu.com/blog/2014/12/10/docker-on-vyos/)
 
 ## 最近困ったこと（おまけ）
 
