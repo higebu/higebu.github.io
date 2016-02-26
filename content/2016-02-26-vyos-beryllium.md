@@ -15,7 +15,7 @@ Summary: 開発中の VyOS Berylliumのまとめです。
 * 新しいビルドスクリプト
     * [vyos-build][vyos-build]
     * [build-iso](https://github.com/vyos/build-iso)から変更
-    * trickv さんがAMIのビルドスクリプト作ってる [https://github.com/trickv/vyos-build/tree/vm](https://github.com/trickv/vyos-build/tree/vm)
+    * 日本の[VyOS Users Meeting #2](http://vyosjp.connpass.com/event/9667/)にも来た[trickv](https://twitter.com/trickv)さんがAMIのビルドスクリプト作ってる [https://github.com/trickv/vyos-build/tree/vm](https://github.com/trickv/vyos-build/tree/vm)
 * メタパッケージ、[vyos-world](https://github.com/vyos/vyos-world)
     * VyOS独自パッケージのまとめ
     * [パッケージリスト](https://github.com/vyos/vyos-world/blob/current/debian/control)
