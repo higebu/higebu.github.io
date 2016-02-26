@@ -67,6 +67,7 @@ Summary: 開発中の VyOS Berylliumのまとめです。
             curl http://xxx.xxx.xxx.xxx:3128/squid-internal-dynamic/netdb                                                                                       
             NETDB support not compiled into this Squid cache.
             ```
+
     * Jessieでは3.4.8なのでたぶん直っているはず(未確認)
 
  [vyos-build]: https://github.com/vyos/vyos-buld
