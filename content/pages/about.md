@@ -3,10 +3,9 @@ date: 2016-03-13 0:00
 
 ## アカウントなど
 
-Twitter: [@higebu](https://twitter.com/)
-GitHub: [@higebu](https://github.com/higebu)
-Mail: [yuya.kusakabe@gmail.com](mailto:yuya.kusakabe@gmail.com)
-(PGP Key: [PGP Key](http://pgp.mit.edu//pks/lookup?search=0x6C5DDF59&op=vindex))
+* Twitter: [@higebu](https://twitter.com/)
+* GitHub: [@higebu](https://github.com/higebu)
+* Mail: [yuya.kusakabe@gmail.com](mailto:yuya.kusakabe@gmail.com) (PGP Key: [PGP Key](http://pgp.mit.edu//pks/lookup?search=0x6C5DDF59&op=vindex))
 
 ## 勉強会などでの発表履歴
 
