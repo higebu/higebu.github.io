@@ -23,6 +23,8 @@ VirtualMachineに下記のメソッドがあります。
 * RetrieveForkChildren_Task
 * RetrieveForkParent_Task
 
+また、プロパティには`config.forkconfiginfo`や`runtime.quiescedforkparent`があります。
+
 これらは、mobでVMを開き、ページのソースを見ると見つかります。
 
 今回はVMForkするところまでなので、`EnableForkParent_Task`と`CreateForkChild_Task`を使います。
