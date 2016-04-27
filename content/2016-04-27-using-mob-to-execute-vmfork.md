@@ -27,13 +27,13 @@ VirtualMachineに下記のメソッドがあります。
 
 ## mobからVMForkを実行する方法
 
-1. mobを開く
+### 1. mobを開く
 
 ```
 https://<vcenter_ip_or_hostname>/mob/
 ```
 
-2. 親VMのページを開く
+### 2. 親VMのページを開く
 
 その後、rootFolderからたどるなり、searchIndexを使うなりして、親にするVMを開きます。URLは下記のようになっているはずです。
 
@@ -41,7 +41,7 @@ https://<vcenter_ip_or_hostname>/mob/
 https://<vcenter_ip_or_hostname>/mob/?moid=vm-111
 ```
 
-3. EnableForkParent_Taskを実行する
+### 3. EnableForkParent_Taskを実行する
 
 標準で実行できるメソッドであれば、ページ下方にリンクがありますが、非公開APIの場合、リンクはありません。
 
@@ -53,7 +53,7 @@ https://<vcenter_ip_or_hostname>/mob/?moid=vm-111&method=enableForkParent
 
 開けばわかりますが、パラメータはありませんので、`Invoke Method`をクリックするだけです。
 
-4. 親VMをquiesced状態にする
+### 4. 親VMをquiesced状態にする
 
 これは親VM内から実行する必要があります。
 
@@ -71,7 +71,7 @@ PowerCLIを使わない場合、PreQuiesceScriptとPostCloneScriptのアップ�
 
 子VMがForkされたときにPostCloneScriptが自動で実行されているようなので、CustomizationSpec辺りを使っているのかなと思っていますが、CustomizationGuiRunOnceはWindowsでしか使えなかった気がしていたり、vCloud Directorではstart up scriptをLinuxでも登録できたような気がしていたりして、どうやるのかはっきりとはわかっていません。
 
-5. VMForkする
+### 5. VMForkする
 
 APIとしては`CreateForkChild_Task`です。PowerCLIの`New-InstantCloneVM`にあたります。
 
