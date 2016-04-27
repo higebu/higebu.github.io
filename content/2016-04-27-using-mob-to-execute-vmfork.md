@@ -41,7 +41,7 @@ https://<vcenter_ip_or_hostname>/mob/
 
 ### 2. 親VMのページを開く
 
-その後、rootFolderからたどるなり、searchIndexを使うなりして、親にするVMを開きます。URLは下記のようになっているはずです。
+rootFolderからたどるなり、searchIndexを使うなりして、親にするVMを開きます。URLは下記のようになっているはずです。
 
 ```
 https://<vcenter_ip_or_hostname>/mob/?moid=vm-111
