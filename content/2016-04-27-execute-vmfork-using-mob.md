@@ -1,5 +1,5 @@
 title: VMForkをmobから実行する
-Slug: 2016-04-27-using-mob-to-execute-vmfork
+Slug: 2016-04-27-execute-vmfork-using-mob
 Date: 2016-04-27 23:57
 Category: Tech
 Tags: vmware,vsphere,vmfork,mob
