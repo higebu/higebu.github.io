@@ -80,7 +80,7 @@ PowerCLIを使わない場合、PreQuiesceScriptとPostCloneScriptのアップ�
 PreQuiesceScriptとPostCloneScriptの実行も[GuestOperationsManager][GuestOperationsManager]でやってるみたいです。下記のような雰囲気です。
 
 ```
-$prescript_path;vmtoolsd --cmd 'vmfork-begin -1 -1';$postscript_path;
+$prescript_path;vmtoolsd --cmd 'vmfork-begin -1 -1';$postscript_path
 ```
 
 ### 5. VMForkする
