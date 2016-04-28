@@ -66,7 +66,7 @@ https://<vcenter_ip_or_hostname>/mob/?moid=vm-111&method=enableForkParent
 親VMにコンソールやSSHで入るなりして、下記のコマンドを実行します。
 
 ```
-vmtoolsd --cmd 'vmfork-begin -1 -1
+vmtoolsd --cmd 'vmfork-begin -1 -1'
 ```
 
 自動でやる場合には、APIの[GuestOperationsManager][GuestOperationsManager]のProcessManagerを使えば良いと思います。
@@ -75,7 +75,13 @@ PowerCLIの`Enable-InstantCloneVM`ではここまでの操作と一緒に、PreQ
 
 PowerCLIを使わない場合、PreQuiesceScriptとPostCloneScriptのアップロードはやはり[GuestOperationsManager][GuestOperationsManager]を使うことになります。
 
-子VMがForkされたときにPostCloneScriptが自動で実行されているようなので、CustomizationSpec辺りを使っているのかなと思っていますが、CustomizationGuiRunOnceはWindowsでしか使えなかった気がしていたり、vCloud Directorではstart up scriptをLinuxでも登録できたような気がしていたりして、どうやるのかはっきりとはわかっていません。
+~~子VMがForkされたときにPostCloneScriptが自動で実行されているようなので、CustomizationSpec辺りを使っているのかなと思っていますが、CustomizationGuiRunOnceはWindowsでしか使えなかった気がしていたり、vCloud Directorではstart up scriptをLinuxでも登録できたような気がしていたりして、どうやるのかはっきりとはわかっていません。~~
+
+PreQuiesceScriptとPostCloneScriptの実行も[GuestOperationsManager][GuestOperationsManager]でやってるみたいです。下記のような雰囲気です。
+
+```
+$prescript_path;vmtoolsd --cmd 'vmfork-begin -1 -1';$postscript_path;
+```
 
 ### 5. VMForkする
 
