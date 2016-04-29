@@ -42,10 +42,8 @@ Linux raspberrypi 4.1.19-v7+ #858 SMP Tue Mar 15 15:56:00 GMT 2016 armv7l GNU/Li
 
 自分はfluentdからElasticsearchに入れて、直近1時間の消費電力とか、1日の消費電力量を見られるようにしています。
 
-* 直近1時間
-
 {% img /images/20160429-es.jpg 1351 632 直近1時間 %}
 
-* 1日
+1日の消費電力量はElasticsearch側で計算しています。
 
 {% img /images/20160429-es-kwh.jpg 1024 477 1日の電力量 %}
