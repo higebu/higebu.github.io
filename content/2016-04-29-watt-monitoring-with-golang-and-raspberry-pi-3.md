@@ -7,6 +7,8 @@ Summary: Golang、Raspberry pi 3、Wi-SUNモジュールを使って電力を監
 
 {% img /images/20160429-raspberrypi3-with-wsr35a1-00.png 800 594 raspberrypi3-with-wsr35a1-00 %}
 
+## 目次
+
 [TOC]
 
 ## Wi-SUNモジュールについて
@@ -17,7 +19,7 @@ Wi-SUNモジュールの使い方は[Raspberry PiとWi-SUNモジュールでス�
 
 ## Raspberry pi 3でGolangで書いたものを動かす
 
-Raspberry pi 3でGolangで書いたものを動かしたいときでもRaspberry pi 3上でビルドする必要はありません。下記のように`GOARCH`と`GOARM`を指定してビルドするだけです。さすがGolangですね。
+Raspberry pi 3上でビルドする必要はありません。他のLinuxとかで下記のように`GOARCH`と`GOARM`を指定してビルドするだけです。さすがGolangですね。
 
 ```
 GOARCH=arm GOARM=7 go build
