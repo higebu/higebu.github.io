@@ -25,7 +25,7 @@ Raspberry pi 3上でビルドする必要はありません。他のLinuxとか�
 GOARCH=arm GOARM=7 go build
 ```
 
-Raspberry pi 3には64bitのARMv8が載っていますが、今のところ、Raspbianだと32bitのARMv7用にビルドされているので`GOARCH=arm64`にすると動きません。`uname`の結果も下記の通りです。
+Raspberry pi 3には64bitのARMv8が載っていますが、今のところ、Raspbianは32bitのARMv7用なので`GOARCH=arm64`にすると動きません。`uname`の結果も下記の通りです。
 
 ```
 pi@raspberrypi:~ $ uname -a
