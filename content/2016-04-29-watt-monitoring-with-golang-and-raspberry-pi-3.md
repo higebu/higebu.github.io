@@ -32,7 +32,7 @@ pi@raspberrypi:~ $ uname -a
 Linux raspberrypi 4.1.19-v7+ #858 SMP Tue Mar 15 15:56:00 GMT 2016 armv7l GNU/Linux
 ```
 
-## このツールについて
+## ツールについて
 
 プログラムは[GitHub](https://github.com/higebu/wattmonitor)にアップしてあります。
 
