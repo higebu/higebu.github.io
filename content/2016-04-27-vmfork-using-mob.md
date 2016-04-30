@@ -90,7 +90,7 @@ APIとしては`CreateForkChild_Task`です。PowerCLIの`New-InstantCloneVM`に
 URLは下記の通りです。
 
 ```
-https://<vcenter_ip_or_hostname>/mob/?moid=vm-112&method=createForkChild
+https://<vcenter_ip_or_hostname>/mob/?moid=vm-111&method=createForkChild
 ```
 
 パラメータは`name`と`spec`があるので、`name`に子VMの名前を入れ、`spec`には[VirtualMachineCreateChildSpec][VirtualMachineCreateChildSpec]を入れます。
