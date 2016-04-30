@@ -19,7 +19,7 @@ Wi-SUNモジュールの使い方は[Raspberry PiとWi-SUNモジュールでス�
 
 ## Raspberry pi 3でGolangで書いたものを動かす
 
-Raspberry pi 3上でビルドする必要はありません。他のLinuxとかで下記のように`GOARCH`と`GOARM`を指定してビルドするだけです。さすがGolangですね。
+Raspberry pi 3上でビルドする必要はありません。他のLinuxとかで下記のように`GOARCH`と`GOARM`を指定してビルドすると、できたバイナリはRaspberry pi 3上で動きます。さすがGolangですね。
 
 ```
 GOARCH=arm GOARM=7 go build
