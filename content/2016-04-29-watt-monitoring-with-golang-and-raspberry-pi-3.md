@@ -32,6 +32,14 @@ pi@raspberrypi:~ $ uname -a
 Linux raspberrypi 4.1.19-v7+ #858 SMP Tue Mar 15 15:56:00 GMT 2016 armv7l GNU/Linux
 ```
 
+## Golangでシリアル通信
+
+[github.com/tarm/serial](https://github.com/tarm/serial)を使いました。
+
+使い方はREADMEに書いてある通りで、とても簡単です。
+
+今回作ったツールでは[bp35a1.go](https://github.com/higebu/wattmonitor/blob/master/bp35a1/bp35a1.go)で使っています。
+
 ## ツールについて
 
 プログラムは[GitHub](https://github.com/higebu/wattmonitor)にアップしてあります。
