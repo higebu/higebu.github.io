@@ -4,6 +4,7 @@ Date: 2016-04-29 22:26
 Category: Tech
 Tags: vmware,vsphere,vmfork,mob
 Summary: The procedure to run VMFork using the MOB.
+Lang: en
 
 We cannot do VMFork without [PowerCLI Extension](https://labs.vmware.com/flings/powercli-extensions) for now. But that means there are VMFork related APIs in vSphere API.
 
