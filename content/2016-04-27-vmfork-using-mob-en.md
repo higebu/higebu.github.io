@@ -1,6 +1,6 @@
 title: VMFork using mob
 Slug: 2016-04-27-vmfork-using-mob
-Date: 2016-04-29 22:26
+Date: 2016-04-27 23:57
 Category: Tech
 Tags: vmware,vsphere,vmfork,mob
 Summary: The procedure to run VMFork using the MOB.
