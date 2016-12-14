@@ -1,5 +1,5 @@
 title: 妻と0歳の娘がいるエンジニアの生活
-Slug: 2016-12-14-life-of-engineer-with-wife-and-0-years-old-daughter
+Slug: life-of-engineer-with-wife-and-0-years-old-daughter
 Date: 2016-12-14 22:12
 Category: Life
 Tags: life,engineer
