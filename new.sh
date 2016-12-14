@@ -1,7 +1,7 @@
 #!/bin/sh
 
 TITLE=$1
-SLUG=$(date "+%Y-%m-%d")-$2
+SLUG=$2
 DATE=$(date "+%Y-%m-%d %H:%M")
 CATEGORY=$3
 TAGS=$4
