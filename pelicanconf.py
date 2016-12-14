@@ -68,4 +68,12 @@ PLUGINS = [
     'tag_cloud'
 ]
 
-MD_EXTENSIONS = (['del_ins', 'fenced_code', 'codehilite(css_class=highlight)', 'tables', 'toc'])
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.toc': {},
+    },
+    'output_format': 'html5',
+}
