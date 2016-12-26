@@ -1,5 +1,5 @@
 fabric
-pelican==3.6.3
+pelican
 markdown
 mdx_linkify
 mdx_del_ins
