@@ -44,6 +44,7 @@ FAVICON = 'images/favicon.ico'
 
 BOOTSTRAP_THEME = 'cosmo'
 GITHUB_USER = 'higebu'
+GITHUB_REPO_COUNT = 10
 CODERWALL_USER = 'higebu'
 ADDTHIS_PROFILE = 'ra-53123bf42910d399'
 
