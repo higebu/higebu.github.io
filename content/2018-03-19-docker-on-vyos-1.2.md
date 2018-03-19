@@ -20,6 +20,8 @@ https://downloads.vyos.io/?dir=rolling/current/amd64
 
 Dockerストレージ用のディスクを別にするのは、VyOSではルートディスクをすでにoverlayfsでマウントしているからです。
 
+詳しくは [Supported backing filesystems](https://docs.docker.com/storage/storagedriver/select-storage-driver/#supported-backing-filesystems) を参照。
+
 起動できたら下記のようにするとDockerが動きます。
 
 ### Dockerストレージ用マウントポイント作成
