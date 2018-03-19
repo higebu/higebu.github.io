@@ -134,4 +134,4 @@ Live Restore Enabled: false
 Vagrantとlibvirtが使える人は下記のVagrantfileを使うとサッと試せます。
 他の環境でもディスク追加部分を書き換えればいけるはずです。
 
-{% gist https://gist.github.com/higebu/af2be3de0c5861f2a9b36a7f4e71ffa8 %}
+[gist:id=af2be3de0c5861f2a9b36a7f4e71ffa8]
