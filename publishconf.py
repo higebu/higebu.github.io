@@ -14,8 +14,12 @@ SITEURL = 'https://www.higebu.com'
 HTTP_SITEURL = 'http://www.higebu.com'
 RELATIVE_URLS = False
 
+FEED_MAX_ITEMS = 3
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 DELETE_OUTPUT_DIRECTORY = True
 
