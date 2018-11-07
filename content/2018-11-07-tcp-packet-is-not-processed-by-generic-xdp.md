@@ -9,7 +9,7 @@ Twitterにも書いたけど忘れそうなのでメモしておく。
 
 下記の図のような構成でns2のveth2とveth3にXDPのプログラムをアタッチし、 `XDP_REDIRECT` でns1とns3の間でパケットが往復できるかどうかテストしていたときにTCPのパケットだけ通らなかった。
 
-{% img /images/20181108-network-diagram.png 1009 262 network-diagram network-diagram %}
+{% img /images/20181107-network-diagram.png 1009 262 network-diagram network-diagram %}
 
 ググったところ下記のメールスレッドが見つかり、結論としてはGeneric XDPではTCPのパケットがPASSされていて、アタッチしたXDPのプログラムを通らない。
 
