@@ -13,13 +13,13 @@ Summary: XDP の meta data が VLAN のパケットのときに失われるバ�
 
 ## Linux へのパッチの送り方について
 
-公式ドキュメントにパッチの送り方 [Submitting patches: the essential guide to getting your code into the kernel][4] が書いてあるので、これを読めばだいたいわかるようになっていた。
+公式ドキュメントにパッチの送り方 [Submitting patches: the essential guide to getting your code into the kernel][4] が書いてあるので、これを読めばだいたいわかるようになっていました。
 
-また、今回はネットワーク関連だったので、 [netdev FAQ][5] も読んだところ、バグフィックスは [net][6] ブランチ、新機能は [net-next][7] ブランチということがわかり、 [net][6] ブランチにパッチを送るべきということがわかった。
+また、今回はネットワーク関連だったので、 [netdev FAQ][5] も読んだところ、バグフィックスは [net][6] ブランチ、新機能は [net-next][7] ブランチということがわかり、 [net][6] ブランチにパッチを送るべきということがわかりました。
 
-その他に注意する点として、メールの送り方があり、これは [Email clients info for Linux][8] というページにまとまっている。
+その他に注意する点として、メールの送り方があり、これは [Email clients info for Linux][8] というページにまとまっています。
 
-自分はこれを読まずにGmail Web Clientでメールしてしまい、 [タブが全滅したパッチ][9] を送ってしまった。
+自分はこれを読まずにGmail Web Clientでメールしてしまい、 [タブが全滅したパッチ][9] を送ってしまいました。
 
 ## Debian でのカーネルのビルド方法について
 
