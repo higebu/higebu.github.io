@@ -19,7 +19,9 @@ Summary: XDP の meta data が VLAN のパケットのときに失われるバ�
 
 その他に注意する点として、メールの送り方があり、これは [Email clients info for Linux][8] というページにまとまっています。
 
-自分はこれを読まずにGmail Web Clientでメールしてしまい、 [タブが全滅したパッチ][9] を送ってしまいました。
+自分はこれを読まずに `git imap-send` から Gmail Web Clientでメールしてしまい、 [タブが全滅したパッチ][9] を送ってしまいました。
+
+最終的に Thunderbird でメールしましたが、 `git send-email` が一番シンプルで楽そうです。
 
 ## Debian でのカーネルのビルド方法について
 
