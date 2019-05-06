@@ -31,6 +31,13 @@ Summary: XDP の meta data が VLAN のパケットのときに失われるバ�
 make -j`nproc` LOCALVERSION=-hoge bindeb-pkg
 ```
 
+## 感想
+
+- VLAN の処理をハードウェアオフロードしない場合、カーネルが処理するけど、skbをビルドするときにパケットデータからは消えてしまうということ自体初めて知ったし、ドライバのソースを追ったりして、全体的に良い経験になった
+- たぶん今まで VLAN と `bpf_xdp_adjust_meta()` を組み合わせて使ったことのある人がいなかった
+- メール難しい
+- eBPF/XDP と Linux Network Stack を組み合わせてパケットをいじる方法についてかなり詳しくなった
+
  [1]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d85e8be2a5a02869f815dd0ac2d743deb4cd7957
  [2]: https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.37
  [3]: https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.0.10
