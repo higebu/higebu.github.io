@@ -66,7 +66,8 @@ PLUGINS = [
     'liquid_tags.video',
     'liquid_tags.youtube',
     'liquid_tags.include_code',
-    'tag_cloud'
+    'tag_cloud',
+    'summary'
 ]
 
 MARKDOWN = {

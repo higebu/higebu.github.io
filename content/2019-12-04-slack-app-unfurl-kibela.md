@@ -9,6 +9,7 @@ Tags: kibela,slack,golang
 [BBSakura Networks](https://www.bbsakura.net/)では[Kibela](https://kibe.la/ja)を使っていて、Slackでは日々Kibelaのリンクが飛び交っているのですが、リンクを貼っても展開されないため、何のドキュメントなのかわからず不便でした。
 そこで、KibelaのリンクをSlackに貼ったときに展開されるようにするSlack Appを作ったので、使い方を書いておきます。
 ソースコードは [https://github.com/higebu/slack-app-unfurl-kibela](https://github.com/higebu/slack-app-unfurl-kibela) に置いてあります。
+<!-- PELICAN_END_SUMMARY -->
 
 以下、手順です。
 
