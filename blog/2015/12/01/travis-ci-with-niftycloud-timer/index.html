@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>ニフティクラウドタイマーを使ってTravis CIで定期的にビルドを実行する - higeblog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://www.higebu.com/images/favicon.ico" rel="icon">
+
+    <!-- Open Graph tags -->
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="ニフティクラウドタイマーを使ってTravis CIで定期的にビルドを実行する"/>
+            <meta property="og:url" content="https://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/"/>
+            <meta property="og:description" content="ニフティクラウドタイマーを使ってTravis CIで定期的にビルドを実行する方法です。"/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://www.higebu.com/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="https://www.higebu.com/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://www.higebu.com/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.higebu.com/theme/css/style.css" type="text/css"/>
+
+        <link href="https://www.higebu.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="higeblog ATOM Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://www.higebu.com/" class="navbar-brand">
+higeblog            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="https://www.higebu.com/category/tech.html">Tech</a>
+                        </li>
+                        <li >
+                            <a href="https://www.higebu.com/category/road-bike.html">Road bike</a>
+                        </li>
+                        <li >
+                            <a href="https://www.higebu.com/category/lifetech.html">Life,tech</a>
+                        </li>
+                        <li >
+                            <a href="https://www.higebu.com/category/life.html">Life</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.higebu.com/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+                <li><a href="https://travis-ci.org/higebu/higebu.github.io"><img src="https://travis-ci.org/higebu/higebu.github.io.svg?branch=source" alt="Build Status" style="max-width:100%;"></a></li>
+                <li><a href="https://validator.w3.org/feed/check.cgi?url=https%3A//www.higebu.com/feeds/all.atom.xml"><img src="https://validator.w3.org/feed/images/valid-atom.png" alt="[Valid Atom 1.0]" style="max-width:80%;"></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/"
+                       rel="bookmark"
+                       title="Permalink to ニフティクラウドタイマーを使ってTravis CIで定期的にビルドを実行する">
+                        ニフティクラウドタイマーを使ってTravis CIで定期的にビルドを実行する
+                    </a><a href="https://b.hatena.ne.jp/entry/https://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/"><img src="https://b.hatena.ne.jp/entry/image/large/https://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/"></a><a href="https://b.hatena.ne.jp/entry/http://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/"><img src="https://b.hatena.ne.jp/entry/image/large/http://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/"></a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-12-01T20:00:00+09:00"> Tue 01 December 2015</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.higebu.com/tag/niftycloud.html">niftycloud</a>
+        /
+	<a href="https://www.higebu.com/tag/travis-ci.html">travis-ci</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>これは、<a href="http://qiita.com/advent-calendar/2015/niftycloud">NIFTY Cloud Advent Calendar 2015</a>の1日目の記事です。</p>
+<p>ハードルを下げるため、ちょっとしたネタにしました。</p>
+<p><a href="https://travis-ci.org/">Travis CI</a>でGitHubへのpushをトリガーにビルドするのではなく、ビルドを定期的に実行したいときに、<a href="http://cloud.nifty.com/service/timer.htm">ニフティクラウドタイマー</a>を使って実現する方法です。</p>
+<p>タイマーって何？という方は<a href="http://blog.cloud.nifty.com/4058/">ニフティクラウドタイマーのご紹介</a>をご参照ください。</p>
+<p>簡単に言うと、サーバーなしでcronを使えるサービスです。</p>
+<h2 id="_1">前提</h2>
+<ul>
+<li>GitHubのアカウントを持っている</li>
+<li>GitHubのPersonal settingsでPersonal access tokenを作成済(<code>GITHUB_TOKEN</code>とする）</li>
+<li>Travis CIのアカウントを持っている</li>
+<li>Travis CIで定期的にビルドしたい何かがある</li>
+<li>ニフティクラウドのアカウントを持っている</li>
+</ul>
+<h2 id="_2">手順</h2>
+<h3 id="travis-ciaccess-tokengithubpersonal-access-token">Travis CIのAccess TokenをGitHubのPersonal access tokenから取得する</h3>
+<p>下記のコマンドを叩いてください。</p>
+<div class="highlight"><pre><span></span>curl -s -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -H <span class="s1">&#39;Accept: application/vnd.travis-ci.2+json&#39;</span> https://api.travis-ci.org/auth/github -d <span class="s1">&#39;{&quot;github_token&quot;:&quot;GITHUB_TOKEN&quot;}&#39;</span>
+</pre></div>
+
+
+<p>下記のようなレスポンスが返ってきます。</p>
+<div class="highlight"><pre><span></span><span class="p">{</span><span class="nt">&quot;access_token&quot;</span><span class="p">:</span><span class="s2">&quot;TRAVIS_TOKEN&quot;</span><span class="p">}</span>
+</pre></div>
+
+
+<p><code>TRAVIS_TOKEN</code>の部分にTravis CIのAccess Tokenが入っているはずなので、メモしておきます。</p>
+<p>Travis CIのAPI認証について、詳しくは<a href="http://docs.travis-ci.com/api/#authentication">公式ドキュメント</a>をご参照ください。</p>
+<h3 id="curl">curlで実行してみる</h3>
+<p>ここで、APIの実行が可能か確認するため、下記のようにcurlでAPIを叩いてみます。</p>
+<p><code>{TRAVIS_TOKEN}</code>に先ほど取得したTravis CIのAccess Tokenを、<code>{ACCOUNT}</code>に自分のアカウント名、<code>{REPOSITORY}</code>に自分のリポジトリ名を入れてください。</p>
+<p>成功すると、ビルドが実行されるはずです。</p>
+<div class="highlight"><pre><span></span><span class="nv">body</span><span class="o">=</span><span class="s1">&#39;{</span>
+<span class="s1">&quot;request&quot;: {</span>
+<span class="s1">  &quot;branch&quot;:&quot;master&quot;</span>
+<span class="s1">}}&#39;</span>
+
+curl -s -X POST <span class="se">\</span>
+  -H <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="se">\</span>
+  -H <span class="s2">&quot;Accept: application/json&quot;</span> <span class="se">\</span>
+  -H <span class="s2">&quot;Travis-API-Version: 3&quot;</span> <span class="se">\</span>
+  -H <span class="s2">&quot;Authorization: token {TRAVIS_TOKEN}&quot;</span> <span class="se">\</span>
+  -d <span class="s2">&quot;</span><span class="nv">$body</span><span class="s2">&quot;</span> <span class="se">\</span>
+  https://api.travis-ci.org/repo/<span class="o">{</span>ACCOUNT<span class="o">}</span>%2F<span class="o">{</span>REPOSITORY<span class="o">}</span>/requests
+</pre></div>
+
+
+<p>Travis CIでAPIからのビルドの実行について、詳しくは<a href="http://docs.travis-ci.com/user/triggering-builds/">公式ドキュメント</a>ｒｙ</p>
+<h3 id="_3">ニフティクラウドタイマーに設定する</h3>
+<p>設定自体は上記でやってみた、HTTPのリクエストを設定するだけです。</p>
+<p>以下、手順です。</p>
+<p>ニフティクラウドにログインし、左上のメニューから、タイマーを選択します。</p>
+<p><img src="/images/20151201-travis-ci-with-niftycloud-timer-1.png" width="1261" height="480" title="Select NIFTY Cloud Timer" alt="Select NIFTY Cloud Timer"> </p>
+<p>タイマー作成ボタンがあると思いますので、それをクリックします。</p>
+<p>タイマー名とスケジュールを設定します。メモも設定できます。</p>
+<p><img src="/images/20151201-travis-ci-with-niftycloud-timer-2.png" width="1096" height="442" title="Create Timer" alt="Create Timer"></p>
+<p>タイプはHTTPにします。他にはサーバー起動、停止、再起動、削除、設定変更、イメージとして保存、スナップショット取得、MQTT、Fluentdがあります。</p>
+<p><img src="/images/20151201-travis-ci-with-niftycloud-timer-3.png" width="1096" height="613" title="Create Timer" alt="Create Timer"></p>
+<p>HTTPを選択するとURL、メソッド、ヘッダー、ボディが設定できるようになるので、下記のように設定します。</p>
+<ul>
+<li>URL<ul>
+<li><code>https://api.travis-ci.org/repo/{ACCOUNT}%2F{REPOSITORY}/requests</code></li>
+</ul>
+</li>
+<li>メソッド<ul>
+<li>POST</li>
+</ul>
+</li>
+<li>ヘッダー</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="nt">Content-Type:</span><span class="w"> </span><span class="nl">application</span><span class="dl">/</span><span class="nl">json</span><span class="w"></span>
+<span class="c">Accept: application/json</span>
+<span class="c">Travis-API-Version: 3</span>
+<span class="c">Authorization: token {TRAVIS_TOKEN}</span>
+</pre></div>
+
+
+<ul>
+<li>ボディ</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;request&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;branch&quot;</span><span class="p">:</span><span class="s2">&quot;master&quot;</span>
+  <span class="p">}}</span>
+</pre></div>
+
+
+<p>通知の設定をします。</p>
+<p><img src="/images/20151201-travis-ci-with-niftycloud-timer-4.png" width="1093" height="372" title="Create Timer" alt="Create Timer"></p>
+<p>確認して、"作成する"をクリックします。</p>
+<p>これで、設定は完了です。定期的にビルドが実行されるはずです。</p>
+<p>実行の履歴は、作成したタイマーを展開し、実行履歴タブを見ると確認できます。</p>
+<h2 id="travis-cicoreos">Travis CIとニフティクラウドタイマーを使って、自動で最新のCoreOSをインポートする</h2>
+<p>最後に、実際にこの仕組みを使ってCoreOSのインポートを自動化してみた例をご紹介します。</p>
+<p>元々Jenkinsを立てて自動でやっていたんですが、タイマーを使うことでサーバーがいらなくなりました。</p>
+<p>ソースは<a href="https://github.com/higebu/niftycloud-coreos-scripts">GitHub</a>に置いてあるため、それを見てください。</p>
+<p>ビルドの様子も<a href="https://travis-ci.org/higebu/niftycloud-coreos-scripts">Travis CI</a>で見られます。</p>
+<p>ほぼエラーになっているのは、新しいバージョンが出て、インポートされたときのみ成功と判定しているためです。</p>
+<p>見た目が悪いので改善したいと思っています。</p>
+<p>明日、12/02は<a href="http://qiita.com/thuydg@github">@thuydg</a>がmBaaSとかMQTT辺りの話を書いてくれる予定です。</p>
+            </div>
+            <!-- /.entry-content -->
+    <hr />
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+        <a class="addthis_button_tweet"></a>
+        <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+        <a href="http://b.hatena.ne.jp/entry/https://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/" class="hatena-bookmark-button" data-hatena-bookmark-title="ニフティクラウドタイマーを使ってTravis CIで定期的にビルドを実行する" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53123bf42910d399"></script>
+    <!-- AddThis Button END -->
+    <hr />
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'higeblog'; // required: replace example with your forum shortname
+            var disqus_url = 'https://www.higebu.com/blog/2015/12/01/travis-ci-with-niftycloud-timer/';
+            var disqus_config = function () {
+                this.language = "ja";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
+
+    <!-- HatenaStar -->
+    <script type="text/javascript" src="https://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    <script type="text/javascript">
+    Hatena.Star.SiteConfig = {
+      entryNodes: {
+        'header.page-header': {
+          uri: 'h1 a',
+          title: 'h1',
+          container: 'h1'
+        }
+      }
+    };
+    </script>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="http://twitter.com/higebu"><i
+                            class="fa fa-twitter-square fa-lg"></i> twitter
+                    </a></li>
+                    <li class="list-group-item"><a href="http://www.facebook.com/higebu"><i
+                            class="fa fa-facebook-square fa-lg"></i> facebook
+                    </a></li>
+                    <li class="list-group-item"><a href="http://github.com/higebu"><i
+                            class="fa fa-github-square fa-lg"></i> github
+                    </a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="https://www.higebu.com/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group" id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="https://www.higebu.com/tag/docker.html">
+                                docker
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="https://www.higebu.com/tag/vmware.html">
+                                vmware
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="https://www.higebu.com/tag/vyos.html">
+                                vyos
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="https://www.higebu.com/tag/vyatta.html">
+                                vyatta
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="https://www.higebu.com/tag/conference.html">
+                                conference
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="https://www.higebu.com/tag/packer.html">
+                                packer
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="https://www.higebu.com/tag/vagrant.html">
+                                vagrant
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="https://www.higebu.com/tag/zabbix.html">
+                                zabbix
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="https://www.higebu.com/tag/niftycloud.html">
+                                niftycloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="https://www.higebu.com/tag/virtualbox.html">
+                                virtualbox
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+
+    <li class="list-group-item"><h4><i class="fa fa-github fa-lg"></i><span class="icon-label">GitHub Repos</span></h4>
+        <div id="gh_repos">
+            <ul class="list-group" id="github"></ul>
+        </div>
+    </li>
+	<li class="list-group-item">
+		<h4><i class="fa fa-github-alt fa-lg"></i><span class="icon-label">Coderwall Badges</span></h4>
+		<div id="coderwall_badges"></div>
+		<a href="http://coderwall.com/higebu">@higebu</a> on coderwall
+	</li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://www.vyos-users.jp/" target="_blank">
+                vyos-users.jp
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2019 Yuya Kusakabe
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://www.higebu.com/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://www.higebu.com/theme/js/respond.min.js"></script>
+
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$.getJSON("https://api.github.com/search/repositories?q=user:higebu+fork:false&sort=stars&order=desc", function(data){
+			for(var i = 0; i < data.items.length ; i++){
+				if (i > 10 - 1) {
+					break;
+				}
+				var repo = data.items[i];
+				var repo_tag = '<li class="list-group-item"><a href="'+repo.html_url+'">'+repo.name+'</a> <i class="fa fa-star" aria-hidden="true"></i> '+repo.stargazers_count+' <i class="fa fa-code-fork" aria-hidden="true"></i> '+repo.forks_count+'<p><small>'+(repo.description||'')+'</small></p></li>';
+				$("#github").append(repo_tag);
+			}
+		});
+	});
+    </script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.getJSON("https://coderwall.com/higebu.json?callback=?", function(data){
+			for(var i = 0; i < data.user.badges.length ; i++){
+				var badge = data.user.badges[i];
+				var badge_tag = $("<img />");
+				badge_tag.attr("src",badge.badge);
+				badge_tag.attr("title", badge.description);
+				badge_tag.attr("alt", badge.name);
+				badge_tag.css("width","50%");
+				$("#coderwall_badges").append(badge_tag);
+			}
+		});
+	});
+	</script>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'higeblog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18631726-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>
