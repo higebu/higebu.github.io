@@ -7,7 +7,7 @@ Summary: Kibela のリンクを Slack に貼ったときに展開されるよう
 
 この記事は [BBSakura Networks Advent Calendar 2019](https://adventar.org/calendars/4517) の4日目の記事です。
 
-BBSakura Networksでは[Kibela](https://kibe.la/ja)を使っていて、Slackでは日々Kibelaのリンクが飛び交っているのですが、リンクを貼っても展開されないため、何のドキュメントなのかわからず不便でした。
+[BBSakura Networks](https://www.bbsakura.net/)では[Kibela](https://kibe.la/ja)を使っていて、Slackでは日々Kibelaのリンクが飛び交っているのですが、リンクを貼っても展開されないため、何のドキュメントなのかわからず不便でした。
 そこで、KibelaのリンクをSlackに貼ったときに展開されるようにするSlack Appを作ったので、使い方を書いておきます。
 ソースコードは [https://github.com/higebu/slack-app-unfurl-kibela](https://github.com/higebu/slack-app-unfurl-kibela) に置いてあります。
 
