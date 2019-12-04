@@ -3,7 +3,6 @@ Slug: slack-app-unfurl-kibela
 Date: 2019-12-04 23:30
 Category: Tech
 Tags: kibela,slack,golang
-Summary: Kibela のリンクを Slack に貼ったときに展開されるようにした
 
 この記事は [BBSakura Networks Advent Calendar 2019](https://adventar.org/calendars/4517) の4日目の記事です。
 
