@@ -25,6 +25,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "higeblog"
-DISQUS_NO_ID = True
+# DISQUS_SITENAME = "higeblog"
+# DISQUS_NO_ID = True
 GOOGLE_ANALYTICS = "UA-18631726-1"
