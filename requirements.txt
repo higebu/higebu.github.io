@@ -1,4 +1,3 @@
-fabric
 pelican
 markdown
 mdx_linkify
