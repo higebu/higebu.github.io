@@ -6,13 +6,13 @@ Author: higebu
 Category: Tech
 Tags: zabbix, db, migration
 
-[![Zabbix](http://www.zabbix.com/img/zabbix_logo.png =120x31 "Zabbix")][1]
+[![Zabbix](https://www.zabbix.com/img/zabbix_logo.png =120x31 "Zabbix")][1]
 
 Zabbixを1.9.8から1.9.9にしたらエラーを吐いていたので、調べたらDBのスキーマ変わってて、パッチもあった。
 
 ぐぐったら出てきたページ↓
 
-<http://www.zabbix.com/forum/showthread.php?t=25046>
+<https://www.zabbix.com/forum/showthread.php?t=25046>
 
 ```
 18031:20120209:100634.790 [Z3005] query failed: [1054] Unknown column 'mt.status' in 'field list'
@@ -23,7 +23,7 @@ Zabbixを1.9.8から1.9.9にしたらエラーを吐いていたので、調べ�
 
 パッチのページ
 
-[http://zabbix.org/wiki/How\_to/trunk\_db_patches][2]
+[https://zabbix.org/wiki/How\_to/trunk\_db_patches][2]
 
 以下、パッチ当てる手順
 
@@ -36,7 +36,7 @@ Zabbixを1.9.8から1.9.9にしたらエラーを吐いていたので、調べ�
 最新のパッチをダウンロード
 
 ```bash
-svn co http://www.zabbix.org/svn/zabbixorg/zabbix/upgrade_incremental/
+svn co https://www.zabbix.org/svn/zabbixorg/zabbix/upgrade_incremental/
 cd upgrade_incremental
 ```
 
@@ -67,5 +67,5 @@ mysql -uzabbix -p password zabbix < zabbix_incremental_patch_1.9.8-1.9.9.sql
 これで普通に動くし、エラーで動かなくなってても元に戻る。
 でも、テンプレートのインポート/エクスポート機能にバグが直ってないから2.0出るまで待つべきだった。
 
- [1]: http://www.zabbix.com/
- [2]: http://zabbix.org/wiki/How_to/trunk_db_patches
+ [1]: https://www.zabbix.com/
+ [2]: https://zabbix.org/wiki/How_to/trunk_db_patches

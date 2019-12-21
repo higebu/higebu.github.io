@@ -10,16 +10,16 @@ VYATTA USERS MEETING Autumn 2013で発表してきました。
 
 発表資料
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/27115978" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/higebu/jvum2013a-niftycloud" title="jvum2013a niftycloud" target="_blank">jvum2013a niftycloud</a> </strong> from <strong><a href="http://www.slideshare.net/higebu" target="_blank">Yuya Kusakabe</a></strong> </div>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/27115978" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/higebu/jvum2013a-niftycloud" title="jvum2013a niftycloud" target="_blank">jvum2013a niftycloud</a> </strong> from <strong><a href="https://www.slideshare.net/higebu" target="_blank">Yuya Kusakabe</a></strong> </div>
 
 vagrant-vyattaについて
 
 発表の中で少し話しましたが、Vagrantを使ってお手軽にVyattaを試せるようにVagrantのプラグインを作りました。
 プラグインについては、下記のブログで紹介しています。
-[Vyatta用のVagrantプラグイン](http://www.higebu.com/archives/697/)
+[Vyatta用のVagrantプラグイン](https://www.higebu.com/archives/697/)
 
 また、VirtualBox用のboxをPackerを用いて作成していて、下記のブログで作り方を説明しています。
-[PackerでVyattaのVagrant用boxを作る](http://www.higebu.com/archives/685/)
+[PackerでVyattaのVagrant用boxを作る](https://www.higebu.com/archives/685/)
 
 実際に使ってくれている方がいてよかったです。
 

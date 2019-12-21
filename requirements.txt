@@ -9,4 +9,4 @@ IPython==1.2.1
 ghp-import
 jsonschema
 mistune
-feedgenerator==1.7
+feedgenerator>=1.9
