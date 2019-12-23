@@ -18,9 +18,6 @@ mobを探検したところ、VMFork関連のAPIが見つかり、実行方法�
 
 **この記事の内容はVMware非公式で、私を含め、誰もサポートしていません。試すときは自己責任でお願いします。**
 
-## 目次
-
-[TOC]
 
 ## VMFork関連の非公開のAPI
 
@@ -72,7 +69,7 @@ https://<vcenter_ip_or_hostname>/mob/?moid=vm-111&method=enableForkParent
 
 親VMにコンソールやSSHで入るなりして、下記のコマンドを実行します。
 
-```
+```shell
 vmtoolsd --cmd 'vmfork-begin -1 -1'
 ```
 
@@ -86,7 +83,7 @@ PowerCLIを使わない場合、PreQuiesceScriptとPostCloneScriptのアップ�
 
 PreQuiesceScriptとPostCloneScriptの実行も[GuestOperationsManager][GuestOperationsManager]でやってるみたいです。下記のような雰囲気です。
 
-```
+```shell
 $prescript_path;vmtoolsd --cmd 'vmfork-begin -1 -1';$postscript_path
 ```
 

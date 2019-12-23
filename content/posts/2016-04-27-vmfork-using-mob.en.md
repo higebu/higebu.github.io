@@ -11,17 +11,11 @@ tags:
 - "mob"
 ---
 
-Lang: en
-
 We cannot do VMFork without [PowerCLI Extension](https://labs.vmware.com/flings/powercli-extensions) for now. But that means there are VMFork related APIs in vSphere API.
 
 I explored those APIs using the MOB(The Managed Object Browser). Then I found it and I understand how to use it.
 
 **Disclaimer: VMFork is not officially supported by VMware, please use at your own risk.**
-
-## Table of contents
-
-[TOC]
 
 ## VMFork related APIs
 
@@ -69,7 +63,7 @@ This method has no parameters, you have only to click `Invoke Method`.
 
 Run this command on the parent VM via console or SSH.
 
-```
+```shell
 vmtoolsd --cmd 'vmfork-begin -1 -1'
 ```
 
@@ -81,7 +75,7 @@ You can upload these scripts with [GuestOperationsManager][GuestOperationsManage
 
 Also, It seems that PowerCLI's `Enable-InstantCloneVM` runs PreQuiesceScript and PostCloneScript with [GuestOperationsManager][GuestOperationsManager]. The command is like here.
 
-```
+```shell
 $prescript_path;vmtoolsd --cmd 'vmfork-begin -1 -1';$postscript_path
 ```
 
