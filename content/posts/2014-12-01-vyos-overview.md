@@ -12,7 +12,6 @@ tags:
 
 この記事は、 [VyOS Advent Calendar 2014][1] の1日目の記事です。
 
-# 目次
 
 
 # VyOS とは
