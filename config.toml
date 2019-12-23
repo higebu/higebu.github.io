@@ -67,4 +67,4 @@ tag = "tags"
 
 [markup.highlight]
   codeFences = true
-  style = "github"
+  style = "solarized-dark256"
