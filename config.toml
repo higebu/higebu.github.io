@@ -67,6 +67,7 @@ platforms = ["github","facebook","twitter","email"]
 
 [taxonomies]
 tag = "tags"
+category = "categories"
 
 #[blackfriday]
 #hrefTargetBlank = true
