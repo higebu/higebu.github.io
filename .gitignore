@@ -1,7 +1,1 @@
-*.pid
-*.pyc
-*.swp
-output/
-publish/
-cache/
-.python-version
+public

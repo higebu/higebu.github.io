@@ -1,0 +1,70 @@
+baseURL = "http://www.higebu.com/"
+title = "higeblog"
+theme = "kiss"
+languageCode = "en"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+paginate = 10
+enableEmoji = true
+disqusShortname = "higeblog"
+googleAnalytics = "UA-18631726-1"
+enableRobotsTXT = true
+copyright = "&copy; <a href=\"https://github.com/higebu\">Yuya Kusakabe</a> 2011-2019"
+
+[permalinks]
+posts = "/blog/:year/:month/:day/:slug/"
+
+[params.rss]
+includeContent = true
+authorName = "Yuya Kusakabe"
+authorEmail = "yuya.kusakabe@gmail.com"
+
+#[params.assets]
+#customCSS = ["css/custom.css"]
+
+[params.info]
+adsense = "6626334038482193" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true
+homeTitle = "higeblog"
+poweredby = true
+related = true
+codeCopy = true
+
+[params.features]
+disqusOnDemand = true
+
+
+#[params.opengraph.facebook]
+#admins = ["higebu"]
+#appID = ""
+#pageID = ""
+
+[params.opengraph.twitter]
+page = "higebu"
+
+[params.social]
+twitter = "higebu"
+github = "higebu"
+email = "yuya.kusakabe@gmail.com"
+facebook = "higebu"
+#linkedin = "ribice"
+#instagram = ""
+#codepen = ""
+rss = "index.xml" # Add this to show RSS button in social.
+
+[params.social.config]
+platforms = ["github","facebook","twitter","email"]
+
+#[params.matomoAnalytics]
+#siteID = 1
+#rootURL = "//matomo.example.com/"
+
+[taxonomies]
+tag = "tags"
+
+#[blackfriday]
+#hrefTargetBlank = true
+
+[markup.highlight]
+  codeFences = true
+  style = "github"
