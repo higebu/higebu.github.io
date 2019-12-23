@@ -6,16 +6,12 @@ categories:
 - "Tech"
 tags: 
 - "vmware"
-- " vsphere client"
-- " vsphere"
-- " wine"
-- " ubuntu"
-- " mono"
+- "vsphere client"
+- "vsphere"
+- "wine"
+- "ubuntu"
+- "mono"
 ---
-
-Lang: en
-
-[TOC]
 
 ## Versions
 
@@ -27,7 +23,7 @@ Lang: en
 
 * Run following commands:
 
-```
+```shell
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 sudo apt-get update
 sudo apt-get install -y wine1.7 wine-mono4.5.4 wine-gecko2.34
@@ -35,20 +31,20 @@ sudo apt-get install -y wine1.7 wine-mono4.5.4 wine-gecko2.34
 
 * Confirm Wine version
 
-```
+```shell
 $ wine --version
 wine-1.7.38
 ```
 
 * Set up 32bit Wine
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg
 ```
 
 * Install .NET
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks dotnet20
 WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks dotnet30
 WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks dotnet20sp1
@@ -63,7 +59,7 @@ If the above commands exits with error, and shows a download url. Download the f
 
 * Download vSphere Client Installer, and run following command:
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=~/.wine32 wine Downloads/VMware-viclient-all-5.5.0-1993072.exe
 ```
 
@@ -71,7 +67,7 @@ WINEARCH=win32 WINEPREFIX=~/.wine32 wine Downloads/VMware-viclient-all-5.5.0-199
 
 Run following command:
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=$HOME/.wine32 wine $HOME/.wine32/drive_c/Program\ Files/VMware/Infrastructure/Virtual\ Infrastructure\ Client/Launcher/VpxClient.exe
 ```
 

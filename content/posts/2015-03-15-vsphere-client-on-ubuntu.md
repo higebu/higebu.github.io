@@ -14,8 +14,6 @@ tags:
 ---
 
 
-[TOC]
-
 ## 環境
 
 * Ubuntu 14.04.2 amd64
@@ -26,7 +24,7 @@ tags:
 
 * 下記のコマンドを実行
 
-```
+```shell
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 sudo apt-get update
 sudo apt-get install -y wine1.7 wine-mono4.5.4 wine-gecko2.34
@@ -34,14 +32,14 @@ sudo apt-get install -y wine1.7 wine-mono4.5.4 wine-gecko2.34
 
 * wine のバージョンの確認
 
-```
+```shell
 $ wine --version
 wine-1.7.38
 ```
 
 * 32bit 環境の用意
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg
 ```
 
@@ -49,7 +47,7 @@ WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg
 
 * .NET インストール
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks dotnet20
 WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks dotnet30
 WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks dotnet20sp1
@@ -64,7 +62,7 @@ WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks dotnet35sp1
 
 * vSphere Client のインストーラをダウンロードして、下記のコマンドを実行
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=~/.wine32 wine Downloads/VMware-viclient-all-5.5.0-1993072.exe
 ```
 
@@ -72,7 +70,7 @@ WINEARCH=win32 WINEPREFIX=~/.wine32 wine Downloads/VMware-viclient-all-5.5.0-199
 
 * 下記のコマンドを実行する
 
-```
+```shell
 WINEARCH=win32 WINEPREFIX=$HOME/.wine32 wine $HOME/.wine32/drive_c/Program\ Files/VMware/Infrastructure/Virtual\ Infrastructure\ Client/Launcher/VpxClient.exe
 ```
 
