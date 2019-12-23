@@ -1,4 +1,4 @@
-baseURL = "http://www.higebu.com/"
+baseURL = "https://www.higebu.com/"
 title = "higeblog"
 theme = "kiss"
 languageCode = "en"
