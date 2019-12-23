@@ -3,7 +3,7 @@ title: Ubuntuにapt-getでVMware Toolsをインストールする
 slug: install-vmware-tools-to-ubuntu-with-apt-get
 date: 2013-07-07T00:00:00+09:00
 aliases:
-- archives/648
+- /archives/648
 categories: 
 - "Tech"
 tags: 

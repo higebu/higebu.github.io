@@ -3,7 +3,7 @@ title: Zabbix Java GatewayでDouble型の値を監視できるようにするパ
 slug: fix-zabbix-jmx-double-type-value-monitoring
 date: 2013-03-17T00:00:00+09:00
 aliases:
-- archives/608
+- /archives/608
 categories: 
 - "Tech"
 tags: 

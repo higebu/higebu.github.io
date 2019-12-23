@@ -3,7 +3,7 @@ title: Vyatta用のVagrantプラグイン
 slug: vagrant-vyatta
 date: 2013-08-23T00:00:00+09:00
 aliases:
-- archives/697
+- /archives/697
 categories: 
 - "Tech"
 tags: 

@@ -3,7 +3,7 @@ title: Pythonでtail --follow=name
 slug: python-tail-followname
 date: 2012-09-15T00:00:00+09:00
 aliases:
-- archives/464
+- /archives/464
 categories: 
 - "Tech"
 tags: 

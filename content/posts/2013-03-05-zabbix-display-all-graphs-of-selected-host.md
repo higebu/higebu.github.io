@@ -3,7 +3,7 @@ title: Zabbixのグラフ画面で選択したホストのグラフを全て表�
 slug: zabbix-display-all-graphs-of-selected-host
 date: 2013-03-05T00:00:00+09:00
 aliases:
-- archives/561
+- /archives/561
 categories: 
 - "Tech"
 tags: 

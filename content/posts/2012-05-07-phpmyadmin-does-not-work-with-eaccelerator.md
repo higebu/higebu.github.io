@@ -3,7 +3,7 @@ title: eAcceleratorを有効にしているとphpmyadminが動かない
 slug: phpmyadmin-does-not-work-with-eaccelerator
 date: 2012-05-07T00:00:00+09:00
 aliases:
-- archives/389
+- /archives/389
 categories: 
 - "Tech"
 tags: 

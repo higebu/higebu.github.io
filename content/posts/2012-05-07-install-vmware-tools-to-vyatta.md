@@ -3,7 +3,7 @@ title: VyattaにVMware Tools入れる
 slug: install-vmware-tools-to-vyatta
 date: 2012-05-07T00:00:00+09:00
 aliases:
-- archives/393
+- /archives/393
 categories: 
 - "Tech"
 tags: 

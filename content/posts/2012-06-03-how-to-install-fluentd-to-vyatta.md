@@ -3,7 +3,7 @@ title: Vyattaにrvmとfluentd入れたけどうまくいかなかった
 slug: how-to-install-fluentd-to-vyatta
 date: 2012-06-03T00:00:00+09:00
 aliases:
-- archives/423
+- /archives/423
 categories: 
 - "Tech"
 tags: 

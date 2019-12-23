@@ -3,7 +3,7 @@ title: Zabbix1.9.8から1.9.9にするときのDBスキーマ変更パッチ
 slug: how-to-migrate-zabbix-db-198-to-199
 date: 2012-03-02T00:00:00+09:00
 aliases:
-- archives/372
+- /archives/372
 categories: 
 - "Tech"
 tags: 

@@ -3,9 +3,7 @@ title: iPhoneのメッセージアプリが大量の添付ファイルを受け�
 slug: how-to-recover-crashing-iphone-message-app-because-of-recieving-many-attached-files
 date: 2013-05-21T00:00:00+09:00
 aliases:
-- archives/628
-save_as: archives/628/index.html
-Author: higebu
+- /archives/628
 categories: 
 - "Tech"
 tags: 

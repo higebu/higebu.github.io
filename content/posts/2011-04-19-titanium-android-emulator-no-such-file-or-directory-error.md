@@ -3,7 +3,7 @@ title: Titaniumでエミュレータを動かすとNo such file or directoryと�
 slug: titanium-android-emulator-no-such-file-or-directory-error
 date: 2011-04-19T00:00:00+09:00
 aliases:
-- archives/256
+- /archives/256
 categories: 
 - "Tech"
 tags: 

@@ -2,7 +2,7 @@
 title: 地デジアンテナを立てました
 slug: how-to-put-up-the-antenna-device-for-digital-terrestrial-television
 aliases:
-- archives/263
+- /archives/263
 date: 2011-04-25T00:00:00+09:00
 categories: 
 - "life"

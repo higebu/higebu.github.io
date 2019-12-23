@@ -3,7 +3,7 @@ title: VMware上のVMでvNICをVMXNET3にしたときにUDPのパケットが飛
 slug: udp-packet-loss-with-vmxnet3
 date: 2012-09-02T00:00:00+09:00
 aliases:
-- archives/441
+- /archives/441
 categories: 
 - "Tech"
 tags: 

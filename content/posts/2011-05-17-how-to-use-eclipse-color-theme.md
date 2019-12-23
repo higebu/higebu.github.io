@@ -3,7 +3,7 @@ title: Eclipseのエディタの背景色と文字色を変えるプラグイン
 slug: how-to-use-eclipse-color-theme
 date: 2011-05-17T00:00:00+09:00
 aliases:
-- archives/277
+- /archives/277
 categories: 
 - "Tech"
 tags: 

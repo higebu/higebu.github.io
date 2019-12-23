@@ -3,7 +3,7 @@ title: Selenium WebDriver (Java) で自己署名証明書のセキュリティ�
 slug: how-to-accept-untrasted-certificates-with-selenium-firefox-driver
 date: 2011-12-13T00:00:00+09:00
 aliases:
-- archives/354
+- /archives/354
 categories: 
 - "Tech"
 tags: 

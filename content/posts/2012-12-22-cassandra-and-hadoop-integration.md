@@ -3,7 +3,7 @@ title: CassandraとHadoopの連携
 slug: cassandra-and-hadoop-integration
 date: 2012-12-22T00:00:00+09:00
 aliases:
-- archives/474
+- /archives/474
 categories: 
 - "Tech"
 tags: 

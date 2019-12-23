@@ -3,7 +3,7 @@ title: Vimでただのメモをいい感じにハイライトしたい
 slug: how-to-use-hybrid-vim
 date: 2012-09-05T00:00:00+09:00
 aliases:
-- archives/450
+- /archives/450
 categories: 
 - "Tech"
 tags: 

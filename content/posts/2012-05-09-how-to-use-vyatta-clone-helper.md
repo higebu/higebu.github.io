@@ -3,7 +3,7 @@ title: VMware上のVyattaをクローンできるようにする
 slug: how-to-use-vyatta-clone-helper
 date: 2012-05-09T00:00:00+09:00
 aliases:
-- archives/418
+- /archives/418
 categories: 
 - "Tech"
 tags: 
