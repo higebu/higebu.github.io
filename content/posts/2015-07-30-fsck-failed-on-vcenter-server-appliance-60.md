@@ -12,7 +12,6 @@ tags:
 ---
 
 
-[TOC]
 
 ![Shot"](/images/20150730-vcenter-server-appliance-60-fsck-failed.png)
 検証環境の vCSA 6.0 が突然落ちて、コンソールを見たら画像のようになっていたので、直した話です。

@@ -14,7 +14,6 @@ tags:
 
 # 目次
 
-[TOC]
 
 # VyOS とは
 

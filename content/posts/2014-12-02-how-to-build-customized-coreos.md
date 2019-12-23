@@ -12,7 +12,6 @@ tags:
 
 この記事は、 [CoreOS Advent Calendar 2014][2] の2日目の記事です。
 
-[TOC]
 
 [CoreOS][1] は、 Chrome OS をフォークしたもので、 Chrome OS が [Gentoo Linux][3] ベースのため、 CoreOS も Gentoo Linux ベースになっており、 Gentoo のパッケージを持ってくるか、自分で ebuild ファイルを書くことで、パッケージを追加できます。
 

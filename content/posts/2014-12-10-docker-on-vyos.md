@@ -12,7 +12,6 @@ tags:
 
 この記事は、 [VyOS Advent Calendar 2014][1] の10日目の記事です。
 
-[TOC]
 
 ## 作り方
 

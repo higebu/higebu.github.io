@@ -10,7 +10,6 @@ tags:
 ---
 
 
-[TOC]
 
 ## Alpine Linux の Docker イメージのサイズ
 
